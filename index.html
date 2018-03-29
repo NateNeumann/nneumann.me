@@ -4,18 +4,74 @@
       <title>nneumann.me</title>
       <style>
         html{height: 100%;}
+
         body{height: 100%;
-          background-image: "majors.png" ;}
-        h2{color: black;}
-        h3{color: black; font-family: fantasy;}
-        html, body, h2{padding: 0; margin: 0;}
-    /* I learned (Not copy-pasted) everything about CSS from
-    https://www.w3schools.com/html/html_css.asp. */
+          background-color: #003300; margin-bottom: 60;}
+        h1{color: black; background-color: #ffffcc; margin-bottom: 0;
+          margin-left: 0; margin-top: 10; padding-left: 10; font-family: georgia}
+        h2{color: #00693e; background-color: #ffffcc; margin-top: 0;
+          margin-left: 20; padding-left: 10; font-family: georgia}
+        h3{color: white; font-family: georgia; margin-bottom: 0;}
+        h4{color: white; font-family: garamond; margin-top: 0; margin-right: 50}
+        div{background-color: #00693e; width: fit-content; margin-left: 20;
+        }
+        html, body, h2{padding: 0; margin-left: 10;}
+        /* I learned (Not copy-pasted) everything about this CSS
+        from https://www.w3schools.com/html/html_css.asp. */
+
       </style>
     </head>
     <body>
-      <h2> Welcome to my website! :) </h2>
-      <h3> This doesn't have much content yet :( </h3>
-      <img src="colleges.png" alt="Colleges" height="42" width="42">
+        <h1> Data Visualizations by Nate Neumann </h1>
+        <h2> What a CS and Data Science undergrad
+          does in their nonexistent free time </h2>
+
+        <div>
+          <h3> Perceptions of Major Difficulty at Dartmouth </h3>
+          <h4> The graph, arranged descendingly from the perceived "hardest"
+            majors, indicates that students find Engineering and Chemistry to be
+             the hardest majors: and among these majors, as well as
+             in Physics and Astronomy, the percentage of students in that major that
+             perceive it as such is more than 25% higher. However, while most
+             majors are also perceived as a bit more difficult by students
+             enrolled in them than they are by the general populace, and a few
+             majors like Native American Studies are considered vastly so,
+             several actually rank lower among students involved with those
+             departments: with 3.4% of students suggesting that Neuroscience
+             is the most difficult, and not a single Neuro major ranking it
+             as such.
+
+             The data for my visualization is courtesy of Dartmouth Pulse, which
+              collected the data as part of the "Top Five" survey. There were a
+              bit more than 500 respondents, and the data was kept anonymous. I
+              have Terren Klein of Pulse to thank for being willing to share the
+               complete data set with me, upon my inquiry. </h4>
+          <img src="majors.png"; alt="Majors Graph"; height="600"; width="600">
+        </div>
+
+
+        <div>
+          <h3> Student Family Income and Graduate Earnings
+            Correlation in U.S. Colleges </h3>
+          <h4> A consideration of student wealth backgrounds and
+            post-graduate earnings.  Data courtesy of College Scorecard. </h4>
+          <img src="colleges.png"; alt="Colleges"; height="600"; width="600">
+        </div>
+
+        <div>
+          <h3> Daily Bitcoin Value and Search Interest Trends Since 2010 </h3>
+          <h4> The growth of Bitcoin, in price and in public interest. A few
+            important events are included in the timeline for reference, but I
+            think it looks much better without. Considered adding some dates/
+            end-of-day prices for localized peaks, but the events are a bit more
+             useful, and I like the cleanliness of the label-free chart. </h4>
+          <img src="bitcoinprice2.png" alt="Bitcoin Price Graph" height=500;
+          style="float: left; width: 45%; margin-right: 5%;">
+          <img src="bitcoinprice.png" alt="Bitcoin Price Graph" height=500;
+          style="float: left; width: 45%;">
+          <p style="clear: both;">
+            <!-- Horizontal align learned from owlcation.com.-->
+        </div>
+
     </body>
   </html>
